@@ -2,6 +2,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import csv
+import re
 
 for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partTwo")):
     print(file)
