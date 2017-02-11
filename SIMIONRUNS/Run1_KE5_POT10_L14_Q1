@@ -1,0 +1,205 @@
+------ Begin Next Fly'm ------
+
+
+ Begin Fly'm (Tue Feb 07 14:55:17 2017) 
+ Ions Flown Separately, Comp Quality(3) 
+ Number of Ions to Fly = 9 
+ Changes: Mass, Charge,   X,   Y,   Z,  KE,  Azm, Elv, Time of Birth 
+           NO     NO     NO   YES  NO   NO   NO   NO       NO  
+
+
+
+Ion(1) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-8 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(1) Event(Crossed Y = 0 Plane) TOF(0.126731 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(193.826 mm) Y(1.0166e-006 mm) Z(0 mm) Vt(1456.89 mm/usec) 
+Azm(-0 deg) Elv(3.31354 deg) KE(6.0341 eV) KE_Error(0.00136622 eV) 
+
+Ion(1) Event(Outside Work Bench) TOF(0.130976 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0.357475 mm) Z(0 mm) Vt(1456.89 mm/usec) Azm(-0 deg) 
+Elv(3.31354 deg) KE(6.0341 eV) KE_Error(0.00136622 eV) 
+
+Ion(2) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-6 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(2) Event(Outside Work Bench) TOF(0.130754 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-0.168285 mm) Z(0 mm) Vt(1457.68 mm/usec) Azm(-0 deg) 
+Elv(2.31905 deg) KE(6.04064 eV) KE_Error(0.000223015 eV) 
+
+Ion(3) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-4 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(3) Event(Outside Work Bench) TOF(0.130594 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-0.32253 mm) Z(0 mm) Vt(1458.5 mm/usec) Azm(-0 deg) 
+Elv(1.46317 deg) KE(6.04737 eV) KE_Error(0.00194373 eV) 
+
+Ion(4) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-2 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(4) Event(Outside Work Bench) TOF(0.130524 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-0.23277 mm) Z(0 mm) Vt(1458.68 mm/usec) Azm(-0 deg) 
+Elv(0.702291 deg) KE(6.0489 eV) KE_Error(0.00034481 eV) 
+
+Ion(5) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(0 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(5) Event(Outside Work Bench) TOF(0.130498 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0 mm) Z(0 mm) Vt(1458.79 mm/usec) Azm(-0 deg) 
+Elv(0 deg) KE(6.04978 eV) KE_Error(0.000327086 eV) 
+
+Ion(6) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(2 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(6) Event(Outside Work Bench) TOF(0.130524 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0.23277 mm) Z(0 mm) Vt(1458.68 mm/usec) Azm(-0 deg) 
+Elv(-0.702291 deg) KE(6.0489 eV) KE_Error(0.00034481 eV) 
+
+Ion(7) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(4 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(7) Event(Outside Work Bench) TOF(0.130594 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0.32253 mm) Z(0 mm) Vt(1458.5 mm/usec) Azm(-0 deg) 
+Elv(-1.46317 deg) KE(6.04737 eV) KE_Error(0.00194373 eV) 
+
+Ion(8) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(6 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(8) Event(Outside Work Bench) TOF(0.130754 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0.168285 mm) Z(0 mm) Vt(1457.68 mm/usec) Azm(-0 deg) 
+Elv(-2.31905 deg) KE(6.04064 eV) KE_Error(0.000223015 eV) 
+
+Ion(9) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(8 mm) Z(0 mm) Vt(1452.77 mm/usec) Azm(0 deg) Elv(0 deg) KE(6 eV) 
+KE_Error(3.20926e-011 eV) 
+
+Ion(9) Event(Crossed Y = 0 Plane) TOF(0.126731 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(193.826 mm) Y(-1.0166e-006 mm) Z(0 mm) Vt(1456.89 mm/usec) 
+Azm(-0 deg) Elv(-3.31354 deg) KE(6.0341 eV) KE_Error(0.00136622 eV) 
+
+Ion(9) Event(Outside Work Bench) TOF(0.130976 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-0.357475 mm) Z(0 mm) Vt(1456.89 mm/usec) Azm(-0 deg) 
+Elv(-3.31354 deg) KE(6.0341 eV) KE_Error(0.00136622 eV) 
+------ Begin Next Fly'm ------
+
+
+ Begin Fly'm (Tue Feb 07 14:55:24 2017) 
+ Ions Flown Separately, Comp Quality(3) 
+ Number of Ions to Fly = 9 
+ Changes: Mass, Charge,   X,   Y,   Z,  KE,  Azm, Elv, Time of Birth 
+           NO     NO     NO   YES  NO   NO   NO   NO       NO  
+
+
+
+Ion(1) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-8 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(1) Event(Crossed Y = 0 Plane) TOF(0.117527 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(166.848 mm) Y(5.79205e-006 mm) Z(0 mm) Vt(1331.64 mm/usec) 
+Azm(-0 deg) Elv(4.10293 deg) KE(5.04115 eV) KE_Error(0.0025964 eV) 
+
+Ion(1) Event(Outside Work Bench) TOF(0.142487 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(2.37811 mm) Z(0 mm) Vt(1331.64 mm/usec) Azm(-0 deg) 
+Elv(4.10293 deg) KE(5.04115 eV) KE_Error(0.0025964 eV) 
+
+Ion(2) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-6 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(2) Event(Crossed Y = 0 Plane) TOF(0.123241 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(174.738 mm) Y(1.57783e-006 mm) Z(0 mm) Vt(1331.64 mm/usec) 
+Azm(-0 deg) Elv(2.88104 deg) KE(5.04112 eV) KE_Error(0.00159381 eV) 
+
+Ion(2) Event(Outside Work Bench) TOF(0.142236 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(1.27134 mm) Z(0 mm) Vt(1331.64 mm/usec) Azm(-0 deg) 
+Elv(2.88104 deg) KE(5.04112 eV) KE_Error(0.00159381 eV) 
+
+Ion(3) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-4 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(3) Event(Crossed Y = 0 Plane) TOF(0.127427 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(180.583 mm) Y(1.59562e-006 mm) Z(0 mm) Vt(1332.63 mm/usec) 
+Azm(-0 deg) Elv(1.83547 deg) KE(5.04863 eV) KE_Error(0.00233563 eV) 
+
+Ion(3) Event(Outside Work Bench) TOF(0.142005 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0.622233 mm) Z(0 mm) Vt(1332.63 mm/usec) Azm(-0 deg) 
+Elv(1.83547 deg) KE(5.04863 eV) KE_Error(0.00233563 eV) 
+
+Ion(4) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(-2 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(4) Event(Crossed Y = 0 Plane) TOF(0.130893 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(185.313 mm) Y(2.07753e-007 mm) Z(0 mm) Vt(1332.68 mm/usec) 
+Azm(-0 deg) Elv(0.882837 deg) KE(5.04901 eV) KE_Error(0.000291922 eV) 
+
+Ion(4) Event(Outside Work Bench) TOF(0.141914 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0.226318 mm) Z(0 mm) Vt(1332.68 mm/usec) Azm(-0 deg) 
+Elv(0.882837 deg) KE(5.04901 eV) KE_Error(0.000291922 eV) 
+
+Ion(5) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(0 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(5) Event(Outside Work Bench) TOF(0.14188 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(0 mm) Z(0 mm) Vt(1332.77 mm/usec) Azm(-0 deg) 
+Elv(0 deg) KE(5.0497 eV) KE_Error(0.000243366 eV) 
+
+Ion(6) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(2 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(6) Event(Crossed Y = 0 Plane) TOF(0.130893 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(185.313 mm) Y(-2.07753e-007 mm) Z(0 mm) Vt(1332.68 mm/usec) 
+Azm(-0 deg) Elv(-0.882837 deg) KE(5.04901 eV) KE_Error(0.000291922 eV) 
+
+Ion(6) Event(Outside Work Bench) TOF(0.141914 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-0.226318 mm) Z(0 mm) Vt(1332.68 mm/usec) Azm(-0 deg) 
+Elv(-0.882837 deg) KE(5.04901 eV) KE_Error(0.000291922 eV) 
+
+Ion(7) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(4 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(7) Event(Crossed Y = 0 Plane) TOF(0.127427 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(180.583 mm) Y(-1.59562e-006 mm) Z(0 mm) Vt(1332.63 mm/usec) 
+Azm(-0 deg) Elv(-1.83547 deg) KE(5.04863 eV) KE_Error(0.00233563 eV) 
+
+Ion(7) Event(Outside Work Bench) TOF(0.142005 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-0.622233 mm) Z(0 mm) Vt(1332.63 mm/usec) Azm(-0 deg) 
+Elv(-1.83547 deg) KE(5.04863 eV) KE_Error(0.00233563 eV) 
+
+Ion(8) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(6 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(8) Event(Crossed Y = 0 Plane) TOF(0.123241 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(174.738 mm) Y(-1.57783e-006 mm) Z(0 mm) Vt(1331.64 mm/usec) 
+Azm(-0 deg) Elv(-2.88104 deg) KE(5.04112 eV) KE_Error(0.00159381 eV) 
+
+Ion(8) Event(Outside Work Bench) TOF(0.142236 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-1.27134 mm) Z(0 mm) Vt(1331.64 mm/usec) Azm(-0 deg) 
+Elv(-2.88104 deg) KE(5.04112 eV) KE_Error(0.00159381 eV) 
+
+Ion(9) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-1 e) X(0 mm) 
+Y(8 mm) Z(0 mm) Vt(1326.2 mm/usec) Azm(0 deg) Elv(0 deg) KE(5 eV) 
+KE_Error(2.67439e-011 eV) 
+
+Ion(9) Event(Crossed Y = 0 Plane) TOF(0.117527 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(166.848 mm) Y(-5.79205e-006 mm) Z(0 mm) Vt(1331.64 mm/usec) 
+Azm(-0 deg) Elv(-4.10293 deg) KE(5.04115 eV) KE_Error(0.0025964 eV) 
+
+Ion(9) Event(Outside Work Bench) TOF(0.142487 usec) Mass(0.00054858 amu) 
+Charge(-1 e) X(200 mm) Y(-2.37811 mm) Z(0 mm) Vt(1331.64 mm/usec) Azm(-0 deg) 
+Elv(-4.10293 deg) KE(5.04115 eV) KE_Error(0.0025964 eV) 
+

@@ -1,0 +1,21 @@
+------ Begin Next Fly'm ------
+
+
+ Begin Fly'm (Tue Feb 07 15:16:04 2017) 
+ Ions Flown Separately, Comp Quality(3) 
+ Number of Ions to Fly = 1 
+
+
+
+Ion(1) Event(Ion Created) TOF(0 usec) Mass(0.00054858 amu) Charge(-0.7 e) 
+X(0 mm) Y(6 mm) Z(0 mm) Vt(1875.51 mm/usec) Azm(0 deg) Elv(0 deg) KE(10 eV) 
+KE_Error(5.34879e-011 eV) 
+
+Ion(1) Event(Crossed Y = 0 Plane) TOF(0.301819 usec) Mass(0.00054858 amu) 
+Charge(-0.7 e) X(571.653 mm) Y(-8.00159e-006 mm) Z(0 mm) Vt(1877.82 mm/usec) 
+Azm(-0 deg) Elv(-0.667509 deg) KE(10.0246 eV) KE_Error(0.000219372 eV) 
+
+Ion(1) Event(Outside Work Bench) TOF(0.529943 usec) Mass(0.00054858 amu) 
+Charge(-0.7 e) X(1000 mm) Y(-4.99058 mm) Z(0 mm) Vt(1877.82 mm/usec) 
+Azm(-0 deg) Elv(-0.667509 deg) KE(10.0246 eV) KE_Error(0.000219372 eV) 
+
