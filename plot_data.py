@@ -45,10 +45,55 @@ for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partTwo")):
 
 
 three_data = {}
+start_data = []
+cross_y_data = []
+three_data['1'] = {'Focal': {}, 'Start': {}}
+three_data['2'] = {'Focal': {}, 'Start': {}}
+three_data['3'] = {'Focal': {}, 'Start': {}}
+three_data['4'] = {'Focal': {}, 'Start': {}}
+three_data['5'] = {'Focal': {}, 'Start': {}}
+three_data['6'] = {'Focal': {}, 'Start': {}}
+three_data['7'] = {'Focal': {}, 'Start': {}}
+three_data['8'] = {'Focal': {}, 'Start': {}}
+three_data['9'] = {'Focal': {}, 'Start': {}}
+three_data['10'] = {'Focal': {}, 'Start': {}}
+three_data['11'] = {'Focal': {}, 'Start': {}}
+three_data['12'] = {'Focal': {}, 'Start': {}}
+three_data['13'] = {'Focal': {}, 'Start': {}}
+three_data['14'] = {'Focal': {}, 'Start': {}}
+three_data['15'] = {'Focal': {}, 'Start': {}}
+three_data['16'] = {'Focal': {}, 'Start': {}}
+three_data['17'] = {'Focal': {}, 'Start': {}}
+three_data['18'] = {'Focal': {}, 'Start': {}}
+three_data['19'] = {'Focal': {}, 'Start': {}}
+three_data['20'] = {'Focal': {}, 'Start': {}}
+three_data['21'] = {'Focal': {}, 'Start': {}}
+three_data['22'] = {'Focal': {}, 'Start': {}}
+three_data['23'] = {'Focal': {}, 'Start': {}}
+three_data['24'] = {'Focal': {}, 'Start': {}}
+three_data['25'] = {'Focal': {}, 'Start': {}}
+three_data['1'] = {'Focal': {}, 'Start': {}}
+
 for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partThree")):
     print(file)
     with open(os.path.join(".", "SIMIONRUNS", "partThree", file), 'r') as data_source:
         reader = csv.DictReader(data_source, delimiter=",")
         # Get info from title
         for row in reader:
+            if row["Events"] == '2048':
+                three_data[row["Ion N"]]['Focal'] = {"X": float(row["X"]), "Charge": float(row["Charge"]), "KE": float(row["KE"])}
+            elif row["Events"] == '1':
+                three_data[row["Ion N"]]['Start'] = {"Y": float(row["Y"]), "Charge": float(row["Charge"]), "KE": float(row["KE"])}
             print(row)
+pprint(three_data)
+
+
+
+
+
+def plot_data(data, title, xaxis, yaxis):
+    plt.plot(data[0], data[1])
+    plt.ylabel(yaxis)
+    plt.xlabel(xaxis)
+    plt.title(title)
+    plt.show()
