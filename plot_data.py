@@ -26,19 +26,29 @@ for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partTwo")):
                     data[counter][inner_counter] = {}
                     temp = element.split("(")
                     data[counter][inner_counter]["Ion"] = temp[1]
-                elif "Event" in element and "Crossed Y" in element:
+                if "Event" in element and "Crossed Y" in element:
                     temp = element.split("(")
                     data[counter][inner_counter]["Event"] = "Crossed Y = 0"
-                elif "Mass(" in element:
+                if "Mass(" in element:
                     temp = element.split("(")
                     data[counter][inner_counter]["Mass"] = temp[1]
-                elif "X(" in element:
+                if "X(" in element:
                     temp = element.split("(")
                     data[counter][inner_counter]["X"] = temp[1]
-                elif "Y(" in element:
+                if "Y(" in element:
                     temp = element.split("(")
                     data[counter][inner_counter]["Y"] = temp[1]
-                elif "Event(Ion Created)" in element:
+                if "Event(Ion Created)" in element:
                     temp = element.split("(")
                     data[counter][inner_counter]["Event"] = "Created"
-        pprint(data)
+    pprint(data)
+
+
+three_data = {}
+for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partThree")):
+    print(file)
+    with open(os.path.join(".", "SIMIONRUNS", "partThree", file), 'r') as data_source:
+        reader = csv.DictReader(data_source, delimiter=",")
+        # Get info from title
+        for row in reader:
+            print(row)
