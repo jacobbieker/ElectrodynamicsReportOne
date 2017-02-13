@@ -5,6 +5,11 @@ import csv
 import re
 from pprint import pprint
 
+
+def determine_t_over_u(kinetic_energy, charge, potential_lens):
+    return kinetic_energy/(charge * potential_lens)
+
+
 data = {}
 counter = 0
 for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partTwo")):
@@ -89,11 +94,21 @@ pprint(three_data)
 
 
 
-
-
 def plot_data(data, title, xaxis, yaxis):
-    plt.plot(data[0], data[1])
+    plt.plot(data[0], data[1], 'ro')
     plt.ylabel(yaxis)
     plt.xlabel(xaxis)
     plt.title(title)
     plt.show()
+
+#Assumign start at 28mm into the grid, the first 14mm long section, then 6mm between each section
+
+# Plot r_0 vs F/L
+# To get F, subtract 28 + 14 + 6 + 7 from length, so 54mm total
+r_0_vs_F_L_data = [[],[]]
+del three_data['13']
+for key in three_data:
+    r_0_vs_F_L_data[0].append(float(three_data[key]['Start']['Y']))
+    r_0_vs_F_L_data[1].append((float(three_data[key]['Focal']['X']) - 54.0)/14.0)
+
+plot_data(r_0_vs_F_L_data, "f/L vs. T/tau*U", "T/tau*U", "f/L")
