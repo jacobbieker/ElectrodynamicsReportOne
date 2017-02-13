@@ -137,14 +137,6 @@ for key in data:
 
 print(plotting_two_data)
 print(plotting_t_over_u)
-potential = 10.0
-
-for index2, data_list in enumerate(plotting_two_data):
-    plt.plot(plotting_t_over_u[1], plotting_two_data[1], 'ro')
-
-#plt.xlim()
-#plt.ylim()
-plt.show()
 
 
 
@@ -207,4 +199,11 @@ for key in three_data:
     r_0_vs_F_L_data[0].append(float(three_data[key]['Start']['Y']))
     r_0_vs_F_L_data[1].append((float(three_data[key]['Focal']['X']) - 54.0)/14.0)
 
-#plot_data(r_0_vs_F_L_data, "f/L vs. T/tau*U", "T/tau*U", "f/L")
+for index2, data_list in enumerate(plotting_two_data):
+    plt.plot(plotting_t_over_u[1], plotting_two_data[1], 'ro')
+plt.ylabel("f/L")
+plt.xlabel("T/q*U")
+plt.title("f/L vs. T/q*U")
+plt.show()
+
+plot_data(r_0_vs_F_L_data, "r_0 vs f/L", "r_0", "f/L")
