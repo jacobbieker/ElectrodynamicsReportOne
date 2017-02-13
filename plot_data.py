@@ -261,3 +261,34 @@ plt.title("f/L vs. T/q*U")
 plt.show()
 
 plot_data(r_0_vs_F_L_data, "r_0 vs f/L", "r_0", "f/L")
+
+
+
+##################################3
+"""
+ONTO THE OTHER THINGY
+"""
+one_source_data = {}
+y_data_energy = []
+e_data_energy = []
+for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partOne")):
+    print(file)
+    with open(os.path.join(".", "SIMIONRUNS", "partOne", file), 'r') as data_source:
+        reader = csv.DictReader(data_source, delimiter=",")
+        for line in reader:
+            y_data_energy.append(float(line["Y"]))
+            e_data_energy.append(float(line["E"]))
+            print(line)
+
+y_new = np.linspace(y_data_energy[0], y_data_energy[-1], num=len(xd)*10)
+
+coefs = poly.polyfit(y_data_energy, e_data_energy, 2)
+ffit = poly.polyval(y_new, coefs)
+print("Coefficients: " + str(coefs))
+plt.plot(y_new, ffit)
+
+plt.plot(y_data_energy, e_data_energy, 'o')
+plt.ylabel("E")
+plt.xlabel("Y")
+plt.title("E vs. Y")
+plt.show()
