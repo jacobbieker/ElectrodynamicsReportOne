@@ -199,6 +199,59 @@ for key in three_data:
     r_0_vs_F_L_data[0].append(float(three_data[key]['Start']['Y']))
     r_0_vs_F_L_data[1].append((float(three_data[key]['Focal']['X']) - 54.0)/14.0)
 
+
+# sort the data
+reorder = sorted(range(len(plotting_two_data)), key = lambda ii: plotting_t_over_u[1][ii])
+yd = [plotting_two_data[1][ii] for ii in reorder]
+xd = [plotting_t_over_u[1][ii] for ii in reorder]
+
+# make the scatter plot
+plt.scatter(xd, yd, s=30, alpha=0.15, marker='o')
+
+# determine best fit line
+par = np.polyfit(xd, yd, 1, full=True)
+
+slope=par[0][0]
+intercept=par[0][1]
+xl = [min(xd), max(xd)]
+yl = [slope*xx + intercept  for xx in xl]
+
+# coefficient of determination, plot text
+variance = np.var(yd)
+residuals = np.var([(slope*xx + intercept - yy)  for xx,yy in zip(xd,yd)])
+Rsqr = np.round(1-residuals/variance, decimals=2)
+plt.text(.9*max(xd)+.1*min(xd),.9*max(yd)+.1*min(yd),'$R^2 = %0.2f$'% Rsqr, fontsize=30)
+
+plt.ylabel("f/L")
+plt.xlabel("T/q*U")
+plt.title("f/L vs. T/q*U")
+
+# error bounds
+yerr = [abs(slope*xx + intercept - yy)  for xx,yy in zip(xd,yd)]
+par = np.polyfit(xd, yerr, 2, full=True)
+
+yerrUpper = [(xx*slope+intercept)+(par[0][0]*xx**2 + par[0][1]*xx + par[0][2]) for xx,yy in zip(xd,yd)]
+yerrLower = [(xx*slope+intercept)-(par[0][0]*xx**2 + par[0][1]*xx + par[0][2]) for xx,yy in zip(xd,yd)]
+
+plt.plot(xl, yl, '-r')
+plt.plot(xd, yerrLower, '--r')
+plt.plot(xd, yerrUpper, '--r')
+plt.show()
+
+import numpy.polynomial.polynomial as poly
+
+x_new = np.linspace(xd[0], xd[-1], num=len(xd)*10)
+
+coefs = poly.polyfit(xd, yd, 2)
+ffit = poly.polyval(x_new, coefs)
+plt.plot(x_new, ffit)
+plt.plot(xd, yd, 'o')
+plt.ylabel("f/L")
+plt.xlabel("T/q*U")
+plt.title("f/L vs. T/q*U")
+plt.show()
+
+
 for index2, data_list in enumerate(plotting_two_data):
     plt.plot(plotting_t_over_u[1], plotting_two_data[1], 'ro')
 plt.ylabel("f/L")
