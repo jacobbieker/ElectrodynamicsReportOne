@@ -12,13 +12,15 @@ def determine_t_over_u(kinetic_energy, charge, potential_lens):
 
 data = {}
 counter = 0
+plotting_two_data = [[],[],[],[],[],[],[],[],[]]
+plotting_t_over_u = [[],[],[],[],[],[],[],[],[]]
 for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partTwo")):
     print(file)
     with open(os.path.join(".", "SIMIONRUNS", "partTwo", file), 'r') as data_source:
         # Get info from title
         counter += 1
         list_name = file.split("_")
-        data[counter] = {"KE": list_name[1], "POT": list_name[2], "L": list_name[3], "Q": list_name[4]}
+        data[counter] = {"KE": float(list_name[1].split("E")[1]), "POT": list_name[2], "L": list_name[3], "Q": float(list_name[4].split("Q")[1])}
         inner_counter = 0
         for line in data_source:
             #TODO Get Information on charge, Start position, when Y axis crossed, mass, and Kinetic energy
@@ -30,7 +32,7 @@ for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partTwo")):
                     inner_counter += 1
                     data[counter][inner_counter] = {}
                     temp = element.split("(")
-                    data[counter][inner_counter]["Ion"] = temp[1]
+                    data[counter][inner_counter]["Ion"] = int(temp[1])
                 if "Event" in element and "Crossed Y" in element:
                     temp = element.split("(")
                     data[counter][inner_counter]["Event"] = "Crossed Y = 0"
@@ -47,6 +49,32 @@ for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partTwo")):
                     temp = element.split("(")
                     data[counter][inner_counter]["Event"] = "Created"
     pprint(data)
+
+# Convert data from above to get what we need: where the Y axis was crossed, already have KE, Charge, Potential from filename
+# Need to get data only from every ion that has the same start position, so 9 tries per file
+# If Ion = 1 it starts at the same place each time, so don't need to check that, only where crossed Y axis
+for key in data:
+    current_ion = 1
+    for key2 in data[key]:
+        if isinstance(data[key][key2], dict):
+            if "Ion" in data[key][key2].keys() and "Event" in data[key][key2].keys():
+                if data[key][key2]["Ion"] == current_ion:
+                    print("Start new ion")
+                    plotting_two_data[current_ion].append((float(data[key][key2]["X"].split(" ")[0]) - 54.0)/14.0)
+                    plotting_t_over_u[current_ion].append(determine_t_over_u(data[key]["KE"], data[key]["Q"], 10.0))
+                    current_ion += 1
+print(plotting_two_data)
+print(plotting_t_over_u)
+potential = 10.0
+
+for index2, data_list in enumerate(plotting_two_data):
+    plt.plot(plotting_t_over_u[1], plotting_two_data[1], 'ro')
+
+#plt.xlim()
+#plt.ylim()
+plt.show()
+
+
 
 
 three_data = {}
@@ -77,7 +105,6 @@ three_data['22'] = {'Focal': {}, 'Start': {}}
 three_data['23'] = {'Focal': {}, 'Start': {}}
 three_data['24'] = {'Focal': {}, 'Start': {}}
 three_data['25'] = {'Focal': {}, 'Start': {}}
-three_data['1'] = {'Focal': {}, 'Start': {}}
 
 for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partThree")):
     print(file)
@@ -89,9 +116,6 @@ for file in os.listdir(os.path.join(".", "SIMIONRUNS", "partThree")):
                 three_data[row["Ion N"]]['Focal'] = {"X": float(row["X"]), "Charge": float(row["Charge"]), "KE": float(row["KE"])}
             elif row["Events"] == '1':
                 three_data[row["Ion N"]]['Start'] = {"Y": float(row["Y"]), "Charge": float(row["Charge"]), "KE": float(row["KE"])}
-            print(row)
-pprint(three_data)
-
 
 
 def plot_data(data, title, xaxis, yaxis):
@@ -111,4 +135,4 @@ for key in three_data:
     r_0_vs_F_L_data[0].append(float(three_data[key]['Start']['Y']))
     r_0_vs_F_L_data[1].append((float(three_data[key]['Focal']['X']) - 54.0)/14.0)
 
-plot_data(r_0_vs_F_L_data, "f/L vs. T/tau*U", "T/tau*U", "f/L")
+#plot_data(r_0_vs_F_L_data, "f/L vs. T/tau*U", "T/tau*U", "f/L")
