@@ -242,8 +242,9 @@ import numpy.polynomial.polynomial as poly
 
 x_new = np.linspace(xd[0], xd[-1], num=len(xd)*10)
 
-coefs = poly.polyfit(xd, yd, 2)
+coefs = poly.polyfit(xd[0:len(xd)-1], yd[0:len(yd)-1], 2)
 ffit = poly.polyval(x_new, coefs)
+print("Coefficients: " + str(coefs))
 plt.plot(x_new, ffit)
 plt.plot(xd, yd, 'o')
 plt.ylabel("f/L")
